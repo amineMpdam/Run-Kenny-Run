@@ -1,0 +1,3 @@
+﻿
+{com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
+	play: { down: playdn, up: playup, font: default-font }},}

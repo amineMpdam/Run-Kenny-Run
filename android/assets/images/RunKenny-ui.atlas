@@ -1,0 +1,108 @@
+
+RunKenny-ui.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+background
+  rotate: false
+  xy: 1, 483
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: -1
+congRats
+  rotate: false
+  xy: 1, 1
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: -1
+kenny
+  rotate: false
+  xy: 803, 763
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+logo
+  rotate: false
+  xy: 803, 611
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+menudn
+  rotate: false
+  xy: 803, 544
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+menup
+  rotate: false
+  xy: 803, 477
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+optdn
+  rotate: false
+  xy: 870, 544
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+optup
+  rotate: false
+  xy: 803, 410
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+playdn
+  rotate: false
+  xy: 870, 477
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+playup
+  rotate: false
+  xy: 803, 343
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+retrydn
+  rotate: false
+  xy: 870, 410
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+retryup
+  rotate: false
+  xy: 803, 276
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+
+RunKenny-ui2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+grave
+  rotate: false
+  xy: 1, 193
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: -1
+cheese
+  rotate: false
+  xy: 1, 1
+  size: 272, 190
+  orig: 272, 190
+  offset: 0, 0
+  index: -1
