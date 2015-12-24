@@ -3,6 +3,7 @@ package com.thugcoder.game.loop;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.utils.Disposable;
@@ -56,11 +57,17 @@ public class WorldRenderer implements Disposable {
 
     private void renderGuiGameOverMessage(SpriteBatch batch) {
         float x = cameraGUI.viewportWidth;
-        float y = cameraGUI.viewportHeight / 2;
+        float y = cameraGUI.viewportHeight;
         if (worldController.isGameOver()) {
             BitmapFont fontGameOver = Assets.instance.fonts.defaultBig;
             fontGameOver.setColor(15, 192, 192, 1);
-            fontGameOver.draw(batch, "Sorry Kenny is dead !!", x, y, 0, Math.round(x) - 30, false);
+            GlyphLayout glyphLayout = new GlyphLayout();
+            String item = "Sorry Kenny is dead !!";
+            glyphLayout.setText(fontGameOver, item);
+            float w = glyphLayout.width;
+            fontGameOver.draw(batch, item, x/2F-w/2F, y/2F);
+            //fontGameOver.draw(batch, "Sorry Kenny is dead !!", x, y, 0, Math.round(x) - 30, false);
+
         }
     }
 

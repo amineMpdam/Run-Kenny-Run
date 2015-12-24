@@ -186,7 +186,7 @@ public class HighScoreScreen extends AbstractGameScreen {
 
         com.thugcoder.game.utils.GamePreferences preferences = com.thugcoder.game.utils.GamePreferences.instance;
         Table layer = new Table();
-        layer.top().left();
+        layer.center().left();
         layer.pad(0f, 50f, 0f, 0f);
         myAtlas = new TextureAtlas(com.thugcoder.game.utils.Constants.TEXTURE_ATLAS_UI);
         mySkin = new Skin(myAtlas);
@@ -212,12 +212,6 @@ public class HighScoreScreen extends AbstractGameScreen {
         menuButton.setHeight(2500f);
         menuButton.setWidth(1000f);
         layer.add(menuButton);
-        playerNameTextFeild.setTextFieldListener(new TextField.TextFieldListener() {
-            @Override
-            public void keyTyped(TextField textField, char c) {
-                playerNameString  += c ;
-            }
-        });
         menuButton.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
@@ -254,10 +248,8 @@ public class HighScoreScreen extends AbstractGameScreen {
                 break;
 
         }
-        preferences.savePlayerNameAtPosition(position, playerNameString);
+            preferences.savePlayerNameAtPosition(position, playerNameString);
         goToMenu();
-
-
     }
 
     private void goToMenu() {

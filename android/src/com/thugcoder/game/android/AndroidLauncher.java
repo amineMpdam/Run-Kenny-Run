@@ -34,7 +34,7 @@ public class AndroidLauncher extends AndroidApplication implements AdsController
         //defining the layout parameters for banner interface
         RelativeLayout layout = new RelativeLayout(this);
         layout.addView(gameView, ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.MATCH_PARENT);
+                ViewGroup.LayoutParams.WRAP_CONTENT);
 
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
